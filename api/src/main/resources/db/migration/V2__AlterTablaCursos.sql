@@ -1,0 +1,1 @@
+ALTER TABLe cursos add column activo boolean;

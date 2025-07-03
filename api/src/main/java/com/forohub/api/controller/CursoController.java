@@ -52,6 +52,7 @@ public class CursoController {
     @Transactional
     public ResponseEntity eliminarCurso(@PathVariable Long id) {
         Curso curso = cursoRepository.getReferenceById(id);
+        System.out.println(curso.getId());
         curso.desactivarCurso();
         return ResponseEntity.noContent().build();
     }

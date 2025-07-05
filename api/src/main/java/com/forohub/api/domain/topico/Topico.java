@@ -4,6 +4,8 @@ import com.forohub.api.domain.curso.Curso;
 import com.forohub.api.domain.respuesta.Respuesta;
 import com.forohub.api.domain.usuario.Usuario;
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Null;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -25,6 +27,7 @@ public class Topico {
     private String mensaje;
     @Column(name = "fecha_creacion")
     private LocalDateTime fechaCreacion = LocalDateTime.now();
+    @Setter
     @Enumerated(EnumType.STRING)
     private Estado estado = Estado.NO_RESPONDIDO;
     @ManyToOne(fetch = FetchType.LAZY)
@@ -38,11 +41,13 @@ public class Topico {
     private List<Respuesta> respuestas = new ArrayList<>();
 
     public Topico(DatosRegistroTopico datos, Usuario autor, Curso curso) {
+        this.id=null;
         this.titulo = datos.titulo();
         this.mensaje = datos.mensaje();
         this.autor = autor;
         this.curso = curso;
     }
+
 
     public void actualizarDatos(DatosActualizarTopico datosActualizar, Usuario autor, Curso curso) {
         if (datosActualizar.titulo() != null) {
@@ -75,7 +80,4 @@ public class Topico {
         this.estado = Estado.CERRADO;
     }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
-    }
 }

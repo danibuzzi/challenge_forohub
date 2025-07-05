@@ -1,5 +1,8 @@
 package com.forohub.api.domain.curso;
 
-public record DatosRespuestaCurso (Long id,
-                                   String nombre) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record DatosRespuestaCurso (@NotNull Long id,
+                                   @NotBlank String nombre) {
 }

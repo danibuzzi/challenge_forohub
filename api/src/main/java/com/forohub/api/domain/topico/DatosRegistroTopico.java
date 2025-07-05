@@ -3,6 +3,7 @@ package com.forohub.api.domain.topico;
 import com.forohub.api.domain.curso.Curso;
 import com.forohub.api.domain.usuario.Usuario;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record DatosRegistroTopico(
 
@@ -10,10 +11,10 @@ public record DatosRegistroTopico(
             String titulo,
             @NotBlank
             String mensaje,
-            @NotBlank
-            Usuario autor,
-            @NotBlank
-            Curso curso
+            @NotNull
+            Long autorId,
+            @NotNull
+            Long cursoId
 
 ) {
 }

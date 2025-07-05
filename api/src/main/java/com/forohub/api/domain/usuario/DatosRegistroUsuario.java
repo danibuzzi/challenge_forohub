@@ -5,11 +5,11 @@ import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.NotBlank;
 
 public record DatosRegistroUsuario(
-        @NotBlank
+        @NotBlank(message = "nada")
         String nombre,
-        @NotBlank
+        @NotBlank(message = "hola")
         String email,
-        @NotBlank
+        @NotBlank (message = "dos")
         String contrasena,
         @Enumerated(EnumType.STRING)
         Tipo tipo

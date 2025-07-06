@@ -28,15 +28,7 @@ public class TopicoController {
     @Autowired
     private CursoRepository cursoRepository;
 
-   /*private final TopicoRepository topicoRepository;
-    private final UsuarioRepository usuarioRepository;
-    private final CursoRepository cursoRepository;
 
-    public TopicoController(TopicoRepository topicoRepository, UsuarioRepository usuarioRepository, CursoRepository cursoRepository) {
-        this.topicoRepository = topicoRepository;
-        this.usuarioRepository = usuarioRepository;
-        this.cursoRepository = cursoRepository;
-    }*/
     @PostMapping
     public ResponseEntity<DatosRegistroTopico> registrarTopico(@RequestBody @Valid DatosRegistroTopico datosRegistroTopico,
                                                                UriComponentsBuilder uriComponentsBuilder) {
@@ -78,9 +70,10 @@ public class TopicoController {
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity<Void> eliminarTopico(@PathVariable Long id) {
-        Topico topico = topicoRepository.getReferenceById(id);
+        Topico topico = topicoRepository.findById(id).get();
         //System.out.println(curso.getId());
-        topicoRepository.delete(topico);
+        topico.cerrarTopico();
+        //topicoRepository.delete(topico);
         return ResponseEntity.noContent().build();
     }
 

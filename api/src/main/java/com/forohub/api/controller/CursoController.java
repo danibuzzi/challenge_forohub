@@ -1,6 +1,7 @@
 package com.forohub.api.controller;
 
 import com.forohub.api.domain.curso.*;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -16,6 +17,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/cursos")
+@SecurityRequirement(name = "bearer-key")
 public class CursoController {
 
     @Autowired

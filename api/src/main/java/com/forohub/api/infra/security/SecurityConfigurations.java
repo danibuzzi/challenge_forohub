@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfigurations {
+public class    SecurityConfigurations {
 
     @Autowired
     private SecurityFilter securityFilter;
@@ -33,6 +33,7 @@ public class SecurityConfigurations {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/login").permitAll()
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll()
                         .anyRequest().authenticated() // TODO: todo lo demás requiere token
                 )
                 .authenticationProvider(authProvider)

@@ -19,7 +19,7 @@ Ya sabemos para que sirve el foro y sabemos cómo se ve, pero ¿sabemos cómo fu
 
 Este es nuestro desafío, vamos a replicar a nivel de **Back End** este proceso, y para eso rearemos una **API Rest** usando **Spring Boot**.
 
-Nuestra **API** va a centrarse específicamente en los tópicos y permitir a los usuarios:
+Nuestra **API** va a permitirá a los usuarios:
 
 ### :hammer:Funcionalidades
 
@@ -27,10 +27,24 @@ Nuestra **API** va a centrarse específicamente en los tópicos y permitir a los
 - `Funcionalidad 2`: Mostrar todos los tópicos creados.
 - `Funcionalidad 3`: Mostrar un tópico específico.
 - `Funcionalidad 4`: Actualizar un tópico.
-- `Funcionalidad 5`: Eliminar un tópico.
-- `Funcionalidad 6`: API con rutas implementadas siguiendo las mejores prácticas del modelo Rest.
-- `Funcionalidad 7`: Validaciones realizadas según reglas del negócio.
-- `Funcionalidad 8`: Implementación de una base de datos para la persistencia de la información mediante mysql.
+- `Funcionalidad 5`: Crear un nuevo usuario.
+- `Funcionalidad 6`: Mostrar todos los usuarios creados.
+- `Funcionalidad 7`: Mostrar un usuario específico.
+- `Funcionalidad 8`: Actualizar un usuario.
+- `Funcionalidad 9`: Eliminar un usuario.
+- `Funcionalidad 10`: Crear un nuevo curso.
+- `Funcionalidad 11`: Mostrar todos los cursos creados.
+- `Funcionalidad 12`: Mostrar un curso específico.
+- `Funcionalidad 13`: Actualizar un curso.
+- `Funcionalidad 14`: Eliminar un curso.
+- `Funcionalidad 15`: Crear una nueva respuesta a un tópico.
+- `Funcionalidad 16`: Mostrar todas las respuestas creadas.
+- `Funcionalidad 17`: Mostrar una respuesta específica.
+- `Funcionalidad 18`: Actualizar una respuesta.
+- `Funcionalidad 19`: Eliminar  una respuesta.
+- `Funcionalidad 20`: API con rutas implementadas siguiendo las mejores prácticas del modelo Rest.
+- `Funcionalidad 21`: Validaciones realizadas según reglas del negócio.
+- `Funcionalidad 22`: Implementación de una base de datos para la persistencia de la información mediante mysql.
 
 ## Comenzando 🚀
 
@@ -76,4 +90,4 @@ _Para desarrollar el proyecto, utilice las siguientes herramientas:_
 * [Spring Boot](https://start.spring.io/) - Herramienta que hace que el desarrollo de aplicaciones web y microservicios con Spring Framework sea más rápido y fácil.
 * [Insomnia](https://insomnia.rest/download) - Heramienta para testeo de la APi rest construida pudiendo ingresar rutas para ALta , Actualización ,Consulta y Eliminacion de Datos relativos al foro , json , tokenJWT de autenticación. 
 ## Autores ✒️
-* [Daniel Alejandro Buzzi](https://insomnia.rest/download)
+* * **Daniel Alejandro Buzzi** - *Alumo especializacion Java Backend* - [Daniel](https://www.linkedin.com/in/daniel/)

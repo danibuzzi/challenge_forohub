@@ -56,29 +56,47 @@ Para instalar el software precisa tener instalado el SDK para java verión 17 ma
 
 
 
-### Instalación 🔧
+### :hammer: Instalación 🔧
 
 -Abra el proeycto en el IDE  y después luego debe cree en mysql la base de datos ForoHub.
+
 -Compile y ejecute el proyecto.
+
 -Agregue un usuario en la tabla usuarios de forma manual.
+
 -Mediante Insomia efectuar el login de usuario para obtener el token de autenticación JWT.
--Agregar datos a las tablas en el siguieten orden:
--Agregue datos a la tabla usuarios,
+
+-Agregar datos a las tablas en el siguiente orden:
+
+-Agregue datos a la tabla usuarios.
+
 -Agregue datos a la tabla cursos.
+
 -Agregue datos a la tabla topicos.
+
 -Agregue datos a la tabla respuestas.
+
 -Ahora podra realizar consultas , modifaciones , alta , eliminación de datos de en las diferentes tablas del sistema.
 
 
 
-### algunos ejemplos de uso 🔧
+
+### Algunos ejemplos de uso 🔧
 
 -Conectarse mediante POST http://localhost:8080/usuarios e ingresar el JSON y  con datos de usuario para dar de alta y el token JWT.
+
 -Las modificaciones de datos en el caso de esta tabla se efectuaran en PUT http://localhost:8080/usuarios
+
 -Se puede consultar los datos de la tabla usuarios en GET http://localhost:8080/usuarios o consutlar el detalle de un usuario GET 
+
  http://localhost:8080/usuarios/id.
+ 
 -La eliminacion de datos se hace en DELETE http://localhost:8080/usuarios/id.
--De manera similar puede hacer alta , modificacion,consulta y eliminación de datos de las restantes tablas (tener en cuenta que deberá agregar el Token JWT generado en el login del usuario).
+
+-De manera similar puede hacer alta , modificacion,consulta y eliminación de datos de las restantes tablas (tener en cuenta que deberá 
+
+agregar previamente el Token JWT generado en el login del usuario).
+
 
 
 ## Construido con 🛠️
@@ -89,7 +107,8 @@ _Para desarrollar el proyecto, utilice las siguientes herramientas:_
 * [MySQL](https://www.mysql.com/) - Sistema de gestión de bases de datos.
 * [Java 17](https://www.oracle.com/java/) - Lenguaje de programación.
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) - Entorno de desarrollo integrado para el desarrollo de programas informáticos.
-* [Spring Boot](https://start.spring.io/) - Herramienta que hace que el desarrollo de aplicaciones web y microservicios con Spring Framework sea más rápido y fácil.
-* [Insomnia](https://insomnia.rest/download) - Heramienta para testeo de la APi rest construida pudiendo ingresar rutas para ALta , Actualización ,Consulta y Eliminacion de Datos relativos al foro , json , tokenJWT de autenticación. 
+* [Spring Boot](https://start.spring.io/) - Herramienta que hace que el desarrollo de aplicaciones web y microservicios con Spring Framework sea más rápido y  fácil.
+* [Insomnia](https://insomnia.rest/download) - Heramienta para testeo de la APi rest construida pudiendo ingresar rutas para alta , actualización ,consulta y eliminacion de datos relativos al foro , json , tokenJWT de autenticación.
+  
 ## Autores ✒️
-* * **Daniel Alejandro Buzzi** - *Alumo especializacion Java Backend* - [Daniel](https://www.linkedin.com/in/daniel/)
+* **Daniel Alejandro Buzzi** - *Alumo especializacion Java Backend* - [Daniel](https://www.linkedin.com/in/daniel/)

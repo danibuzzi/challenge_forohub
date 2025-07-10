@@ -1,9 +1,9 @@
 # Challenge ONE - Back End Java + Spring - API Rest Foro HUB.
 
-![Badge Release](https://img.shields.io/badge/Release%20Date:-Mayo-blue)``
+![Badge Release](https://img.shields.io/badge/Release%20Date:-Julio-blue)``
 ![Badge Java](https://img.shields.io/badge/Java:-17-blue)
-![Badge Java](https://img.shields.io/badge/Spring%20Boot:-3.1.0-blue)
-![Badge Finalizado](https://img.shields.io/badge/Status:-Finalizado-blue)
+![Badge Java](https://img.shields.io/badge/Spring%20Boot:-3.5.3-blue)
+![Badge Finalizado](https://img.shields.io/badge/Status:-En proceso-blue)
 
 ## Descrpción del Proyecto
 

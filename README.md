@@ -3,9 +3,9 @@
 ![Badge Release](https://img.shields.io/badge/Release%20Date:-Julio-blue)``
 ![Badge Java](https://img.shields.io/badge/Java:-17-blue)
 ![Badge Java](https://img.shields.io/badge/Spring%20Boot:-3.5.3-blue)
-![Badge Finalizado](https://img.shields.io/badge/Status:-En proceso-blue)
+![Badge Finalizado](https://img.shields.io/badge/Status:-Finalzado-blue)
 
-## Descrpción del Proyecto
+## Descripción del Proyecto
 
 Es la resolución del **Challenge - Foro Hub** utilizando **Spring Boot** para la creacion de la API Rest, **MySQL** para las bases de datos y **Java 17** para el desarrollo con ayuda del IDE de **Intellij** e **Insomnia** para las respectivas pruebas a la API. Cuarto reto de la formación **Oracle Next Education (ONE)** de **Oracle + Alura LATAM**.
 
@@ -17,7 +17,6 @@ El _Foro HUb_ es un simil  de la plataforma Foro Alura donde los usuarios pueden
 
 Ya sabemos para que sirve el foro y sabemos cómo se ve, pero ¿sabemos cómo funciona por detrás? Es decir, ¿dónde se almacena la información? ¿cómo se tratan esos datos para que se relacione un tópico con una respuesta, o como se relacionan los usuarios con las respuestas de un tópico?
 
-Este es nuestro desafío, vamos a replicar a nivel de **Back End** este proceso, y para eso rearemos una **API Rest** usando **Spring Boot**.
 
 Nuestra **API** va a permitirá a los usuarios:
 
@@ -48,36 +47,39 @@ Nuestra **API** va a permitirá a los usuarios:
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+Para probar el proyecto de forma local debe descargar una copia en formato zip de este repositorio o clónelo en su máquina. 
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+Para instalar el software precisa tener instalado el SDK para java verión 17 mademas de instalar de forma local el gesto de  base de datos mysql.También precisa instalar Insomnia para efectuar las pruebas de las diferentes rutas de la API y sus funcionalidades.
 
-```
-Da un ejemplo
-```
+
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+-Abra el proeycto en el IDE  y después luego debe cree en mysql la base de datos ForoHub.
+-Compile y ejecute el proyecto.
+-Agregue un usuario en la tabla usuarios de forma manual.
+-Mediante Insomia efectuar el login de usuario para obtener el token de autenticación JWT.
+-Agregar datos a las tablas en el siguieten orden:
+-Agregue datos a la tabla usuarios,
+-Agregue datos a la tabla cursos.
+-Agregue datos a la tabla topicos.
+-Agregue datos a la tabla respuestas.
+-Ahora podra realizar consultas , modifaciones , alta , eliminación de datos de en las diferentes tablas del sistema.
 
-_Dí cómo será ese paso_
 
-```
-Da un ejemplo
-```
 
-_Y repite_
+### algunos ejemplos de uso 🔧
 
-```
-hasta finalizar
-```
+-Conectarse mediante POST http://localhost:8080/usuarios e ingresar el JSON y  con datos de usuario para dar de alta y el token JWT.
+-Las modificaciones de datos en el caso de esta tabla se efectuaran en PUT http://localhost:8080/usuarios
+-Se puede consultar los datos de la tabla usuarios en GET http://localhost:8080/usuarios o consutlar el detalle de un usuario GET 
+ http://localhost:8080/usuarios/id.
+-La eliminacion de datos se hace en DELETE http://localhost:8080/usuarios/id.
+-De manera similar puede hacer alta , modificacion,consulta y eliminación de datos de las restantes tablas (tener en cuenta que deberá agregar el Token JWT generado en el login del usuario).
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Construido con 🛠️
 

@@ -18,7 +18,7 @@ El _Foro HUb_ es un simil  de la plataforma Foro Alura donde los usuarios pueden
 Ya sabemos para que sirve el foro y sabemos cómo se ve, pero ¿sabemos cómo funciona por detrás? Es decir, ¿dónde se almacena la información? ¿cómo se tratan esos datos para que se relacione un tópico con una respuesta, o como se relacionan los usuarios con las respuestas de un tópico?
 
 
-Nuestra **API** va a permitirá a los usuarios:
+Nuestra **API** permitirá a los usuarios:
 
 ### :hammer:Funcionalidades
 
